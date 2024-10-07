@@ -1,5 +1,5 @@
 const verifyToken = require('../middlewares/verifyToken')
-const Property = require('../models/Property')
+const Property = require('../models/property')
 const User = require('../models/user')
 const propertyController = require('express').Router()
 

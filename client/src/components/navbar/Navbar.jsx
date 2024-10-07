@@ -1,4 +1,4 @@
-/*import React, { useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from 'react-redux'
 import { useSelector } from "react-redux";
 import classes from "./navbar.module.css";
@@ -144,10 +144,10 @@ const Navbar = () =>{
     )
 }
 
-export default Navbar*/ 
+export default Navbar
 
 
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 import classes from './navbar.module.css'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
@@ -413,7 +413,7 @@ const Navbar = () => {
       }
 
 
-      {/* error */}
+      
       {error && (
         <div className={classes.error}>
           <span>All fields must be filled!</span>
@@ -423,4 +423,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar*/
