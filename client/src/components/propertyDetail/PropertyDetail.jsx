@@ -87,7 +87,7 @@ const PropertyDetail = () => {
       <h3 style={{ textAlign: 'center', marginBottom: '2.5rem', fontSize: '32px', marginTop: '-2.5rem' }}>Property Details</h3>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <img src={`http://localhost:8080/images/${propertyDetail?.img}`} />
+          <img src={`https://realestateservices.onrender.com/images/${propertyDetail?.img}`} />
         </div>
         <div className={classes.right}>
           <h3 className={classes.title}>
@@ -104,7 +104,7 @@ const PropertyDetail = () => {
               <span style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 Owner: {propertyDetail?.currentOwner?.profileImg
                   ? (
-                    <img src={`http://localhost:8080/images/${propertyDetail?.currentOwner?.profileImg}`} className={classes.owner} />
+                    <img src={`https://realestateservices.onrender.com/images/${propertyDetail?.currentOwner?.profileImg}`} className={classes.owner} />
                   ) : (
                     <img src={person} className={classes.owner} />)
                 }</span>

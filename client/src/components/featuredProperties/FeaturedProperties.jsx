@@ -33,7 +33,7 @@ const FeaturedProperties = () =>{
                     {featuredProperties?.map((property)=>( 
                         <div key={property._id} className={classes.featuredProperty}>
                              <Link to = {`/propertyDetail/${property._id}`} className={classes.imgContainer}>
-                             <img src={property.img?`http://localhost:8080/images/${property.img}`:img} alt=""/>
+                             <img src={property.img?`https://realestateservices.onrender.com/images/${property.img}`:img} alt=""/>
                              </Link>
                              <div className={classes.details}>
 

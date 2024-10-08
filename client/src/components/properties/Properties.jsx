@@ -131,7 +131,7 @@ const Properties = () => {
               {filteredProperties.map((property) => (
                 <div className={classes.property} key={property._id} property={property}>
                 <Link className={classes.imgContainer} to={`/propertyDetail/${property._id}`}>
-                    <img src={`http://localhost:8080/images/${property?.img}`} alt="" />
+                    <img src={`https://realestateservices.onrender.com/images/${property?.img}`} alt="" />
                 </Link>
                 <div className={classes.details}>
 

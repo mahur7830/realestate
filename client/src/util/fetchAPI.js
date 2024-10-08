@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080"
+const BASE_URL = "https://realestateservices.onrender.com"
 
 export const request = async (url, method, headers = {}, body = {}, isNotStringified = false) => {
     let res
