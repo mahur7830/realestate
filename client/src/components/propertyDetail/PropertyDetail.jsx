@@ -10,7 +10,6 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { request } from '../../util/fetchAPI'
 import { FaBed, FaSquareFull } from 'react-icons/fa'
-import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs'
 import { useRef } from 'react'
 
 const PropertyDetail = () => {
@@ -19,9 +18,7 @@ const PropertyDetail = () => {
   const [showForm, setShowForm] = useState(false)
   const [desc, setDesc] = useState("")
   const [title,setTitle] = useState("")
-  const [isBookmarked, setIsBookmarked] = useState(false)
-  const [success, setSuccess] = useState(false)
-  // todo display message
+   // todo display message
   const { id } = useParams()
   const formRef = useRef()
   const navigate = useNavigate()
