@@ -16,6 +16,7 @@ const PropertyDetail = () => {
   const { token, user } = useSelector((state) => state.auth)
   const [propertyDetail, setPropertyDetail] = useState(null)
   const [showForm, setShowForm] = useState(false)
+  const [isBookmarked, setIsBookmarked] = useState(false)
   const [desc, setDesc] = useState("")
   const [title,setTitle] = useState("")
    // todo display message
@@ -60,15 +61,7 @@ const PropertyDetail = () => {
 
   }
 
-  const handleDelete = async () => {
-    try {
-      await request(`/property/${id}`, 'DELETE', { 'Authorization': `Bearer ${token}` })
-      navigate('/')
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
+  
   const handleBookmark = async () => {
     try {
       await request(`/property/bookmark/${id}`, 'PUT', { Authorization: `Bearer ${token}` })
